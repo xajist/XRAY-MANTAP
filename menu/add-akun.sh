@@ -98,7 +98,7 @@ shadowsockslink1="ss://${shadowsocks_base64e}@$domain:$tls?plugin=xray-plugin;mu
 systemctl restart xray
 rm -rf /tmp/log
 rm -rf /tmp/log1
-cat > /home/vps/public_html/ss-ws-$user.txt <<-END
+cat > /home/vps/public_html/ss-ws-$user.json <<-END
 { 
  "dns": {
     "servers": [
@@ -205,7 +205,7 @@ cat > /home/vps/public_html/ss-ws-$user.txt <<-END
   "stats": {}
 }
 END
-cat > /home/vps/public_html/ss-grpc-$user.txt <<-END
+cat > /home/vps/public_html/ss-grpc-$user.json <<-END
 {
     "dns": {
     "servers": [
@@ -347,8 +347,8 @@ echo -e "=> WS TLS : /xrayssws" | tee -a /etc/log-create-user.log
 echo -e "=> GRPC   : ss-grpc" | tee -a /etc/log-create-user.log
 echo -e "=> OPOK   : ws://bugcom/xrayssws" | tee -a /etc/log-create-user.log
 echo -e "======Custom Import Config From URL =======" | tee -a /etc/log-create-user.log
-echo -e "URL Custom Config WS TLS   : http://${domain}:89/ss-ws-$user.txt" | tee -a /etc/log-create-user.log
-echo -e "URL Custom Config GRPC TLS : http://${domain}:89/ss-grpc-$user.txt" | tee -a /etc/log-create-user.log
+echo -e "URL Custom Config WS TLS   : http://${domain}:89/ss-ws-$user.json" | tee -a /etc/log-create-user.log
+echo -e "URL Custom Config GRPC TLS : http://${domain}:89/ss-grpc-$user.json" | tee -a /etc/log-create-user.log
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
 
 echo -e "Protokol VPN: VLESS" | tee -a /etc/log-create-user.log
