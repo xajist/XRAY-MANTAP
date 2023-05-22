@@ -18,7 +18,7 @@ wget -O add-akun "https://raw.githubusercontent.com/xajist/sc-xray/main/menu/add
 wget -O updatedll "https://raw.githubusercontent.com/xajist/sc-xray/main/menu/updatedll.sh"
 wget -O add-akun "https://raw.githubusercontent.com/xajist/sc-xray/main/menu/add-akun.sh"
 wget -O delete-akun "https://raw.githubusercontent.com/xajist/sc-xray/main/menu/delete-akun.sh"
-wget -O certv2ray "https://raw.githubusercontent.com/xajist/Mantap/main/xray/certv2ray.sh"
+wget -O certv2ray "https://raw.githubusercontent.com/xajist/sc-vpn/main/xray/certv2ray.sh"
 wget -O restart-xray "https://raw.githubusercontent.com/xajist/sc-xray/main/menu/restart-xray.sh"
 wget -O xmenu "https://raw.githubusercontent.com/xajist/sc-xray/main/menu/xmenu.sh"
 wget -O auto-pointing "https://raw.githubusercontent.com/xajist/sc-xray/main/menu/auto-pointing.sh"
